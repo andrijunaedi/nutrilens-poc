@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Detail Produk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-4">
+    <h1 class="text-2xl font-bold mb-2">NutriLens</h1>
+    <h2 class="text-2xl font-bold mb-4">Detail Produk</h2>
+    <!-- Container untuk informasi produk -->
+    <div id="productContainer" class="mb-4">
+      <!-- Nama Produk -->
+      <h2 id="productName" class="text-xl font-bold mb-2"></h2>
+      <!-- Gambar Produk -->
+      <img id="productImage" src="" alt="Gambar Produk" class="w-64 h-auto mb-4 hidden" />
+      <!-- Informasi Nutrisi Produk -->
+      <div id="productInfo" class="text-lg">
+        <p>Nutri-Grade: <span id="nutriGrade" class="font-bold"></span></p>
+        <p>Energi: <span id="energy"></span></p>
+        <p>Lemak: <span id="fat"></span></p>
+        <p>Gula: <span id="sugars"></span></p>
+        <p>Garam: <span id="salt"></span></p>
+      </div>
+    </div>
+
+    <script src="./js/detail.js"></script>
+  </body>
+</html>

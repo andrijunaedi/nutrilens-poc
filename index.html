@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>NutriLens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-4">
+    <h1 class="text-2xl font-bold mb-2">NutriLens</h1>
+
+    <!-- Form untuk melakukan pencarian ulang dan tombol untuk scan by kamera -->
+    <div class="mb-4">
+      <form action="index.html" method="get" class="inline-block mr-4 w-1/3">
+        <input
+          type="text"
+          name="q"
+          placeholder="Cari produk berdasarkan kata kunci..."
+          class="border p-2 w-10/12"
+        />
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2">Cari</button>
+      </form>
+      <a href="scan.html" class="bg-green-500 text-white px-4 py-2 inline-block">Scan by Kamera</a>
+    </div>
+
+    <!-- Predefined categories -->
+    <div class="mb-4">
+      <h3 class="text-lg font-semibold mb-2">Kategori Populer:</h3>
+      <div class="flex space-x-2">
+        <a
+          href="index.html?categories=chocolates"
+          class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300"
+          >Chocolates</a
+        >
+        <a
+          href="index.html?categories=milk"
+          class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300"
+          >Milk</a
+        >
+        <a
+          href="index.html?categories=snacks"
+          class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300"
+          >Snacks</a
+        >
+        <a
+          href="index.html?categories=beverages"
+          class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300"
+          >Beverages</a
+        >
+        <a
+          href="index.html?categories=cereals"
+          class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300"
+          >Cereals</a
+        >
+      </div>
+    </div>
+
+    <!-- Menampilkan query yang dicari -->
+    <h2 id="searchQuery" class="text-xl mb-4"></h2>
+    <!-- Container untuk hasil pencarian -->
+    <div id="results" class="space-y-4"></div>
+
+    <script src="./js/search.js"></script>
+  </body>
+</html>

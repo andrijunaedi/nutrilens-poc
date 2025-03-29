@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scan Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ZXing JS library for camera barcode scanning -->
+    <script src="https://unpkg.com/@zxing/library@latest"></script>
+  </head>
+  <body class="p-4">
+    <h1 class="text-2xl font-bold mb-2">NutriLens</h1>
+    <h2 class="text-2xl font-bold mb-4">Scan Barcode</h2>
+    <!-- Video element to display camera feed -->
+    <video id="video" class="border mb-4" width="300" height="200"></video>
+    <div>
+      <button id="startButton" class="bg-blue-500 text-white px-4 py-2 mr-2">Mulai Scan</button>
+      <button id="stopButton" class="bg-gray-500 text-white px-4 py-2">Stop</button>
+    </div>
+    <p id="scanResult" class="mt-4 text-red-600"></p>
+
+    <script src="./js/scan.js"></script>
+  </body>
+</html>
